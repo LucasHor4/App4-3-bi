@@ -26,9 +26,17 @@ namespace App4.Controllers
         [HttpPost]
         public IActionResult CadastrarPessoa(Pessoa objPessoa)
         {
+            if (ModelState.IsValid) 
+            {
+                return View("Resulatado", objPessoa);
+            }
+            return View();
+          
+        }
+        public IActionResult Resultado()
+        {
             return View();
         }
-
         //public IActionResult Privacy()
         //{
         //  return View();
@@ -37,7 +45,7 @@ namespace App4.Controllers
         //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         //public IActionResult Error()
         //{
-         //   return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        //   return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         //}
     }
 }
