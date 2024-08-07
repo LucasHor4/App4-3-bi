@@ -28,7 +28,7 @@ namespace App4.Controllers
         {
             if (ModelState.IsValid) 
             {
-                return View("Resulatado", objPessoa);
+                return View("Resultado", objPessoa);
             }
             return View();
           
