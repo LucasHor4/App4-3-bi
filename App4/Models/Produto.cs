@@ -4,7 +4,7 @@ namespace App4.Models
 {
     public class Produto
     {
-        [Display(Name = "Código")]
+        [Display(Name = "Código do produto")]
         [Required(ErrorMessage = "O código é obrigatório!")]
         public int Codigo { get; set; }
 
@@ -12,8 +12,8 @@ namespace App4.Models
         [Display(Name = "Nome do produto")]
         public string NomeProduto { get; set; }
 
-        [Required(ErrorMessage = "A descrição é obrigatória!")]
-        [Display(Name = "Descrição")]
+        [Required(ErrorMessage = "A descrição do produto é obrigatória!")]
+        [Display(Name = "Descrição do produto")]
         public string Descricao { get; set; }
 
         [Required(ErrorMessage = "O E-mail do fornecedor é obrigatório!")]
@@ -23,7 +23,7 @@ namespace App4.Models
         public string FornecedorEmail { get; set; }
 
         [Required(ErrorMessage = "A quantidade do(e) produto(s) é obrigatório(a)!")]
-        [Display(Name = "Quantidade")]
+        [Display(Name = "Quantidade de produtos")]
         public int Qtd { get; set; }
 
 
