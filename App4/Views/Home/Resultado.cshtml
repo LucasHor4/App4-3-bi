@@ -28,6 +28,12 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Obs)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Login)
         </dt>
@@ -39,6 +45,13 @@
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Senha)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ConfirmaSenha)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ConfirmaSenha)
         </dd>
     </dl>
 </div>
