@@ -37,6 +37,31 @@ namespace App4.Controllers
         {
             return View();
         }
+
+
+        public IActionResult CadastrarProduto()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CadastrarProduto(Produto objProduto)
+        {
+            if (ModelState.IsValid)
+            {
+                return View("Exibir", objProduto);
+            }
+            return View();
+
+        }
+        public IActionResult Exibir()
+        {
+            return View();
+        }
+
+
+
+
         //public IActionResult Privacy()
         //{
         //  return View();
